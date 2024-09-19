@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.torre {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 180px;
+    height: 100%;
+    border: 2px solid black;
+    position: relative;
+    background-color: #f0f0f0;
+    cursor: pointer; 
+}
+
+.torre.selecionado {
+    border-color: #4CAF50;
+}
+
+.peca {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    margin: 4px auto; 
+    border-radius: 5px;
+    cursor: pointer; 
+    height: 40px;
+    line-height: 40px; 
+    width: auto;
+    padding: 0 10px;
+}
+
+.peca.selecionado {
+    border: 2px solid #FFC107; 
+}
+
+#player-info, #move-count {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-button:hover {
+    background-color: #45a049;
+}
+
+#victory-message {
+    display: none; /* Inicialmente escondido */
+}
